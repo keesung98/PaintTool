@@ -1,4 +1,4 @@
-﻿using PaintTool.ViewModel;
+﻿using PaintTool.Model;
 using PaintTool.ViewModel.UserControl;
 using System;
 using System.Collections.Generic;

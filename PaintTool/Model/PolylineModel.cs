@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
 
-namespace PaintTool.ViewModel
+namespace PaintTool.Model
 {
     internal class PolylineViewModel :INotifyPropertyChanged
     {
