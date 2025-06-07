@@ -16,8 +16,7 @@ namespace PaintTool.ViewModel.UserControl
     {
         public ObservableCollection<PolylineViewModel> Lines { get; set; } = new ObservableCollection<PolylineViewModel>();
 
-        public ObservableCollection<string> AvailableColors { get; } =
-            new ObservableCollection<string> { "Black", "Red", "Blue", "Green" };
+        public ObservableCollection<string> AvailableColors { get; } = new ObservableCollection<string> { "Black", "Red", "Blue", "Green" };
 
         private string selectedColor = "Black";
         public string SelectedColor

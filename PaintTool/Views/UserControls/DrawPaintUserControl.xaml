@@ -15,14 +15,13 @@
         <StackPanel 
             Grid.Row="0" 
             Orientation="Horizontal" 
-            DockPanel.Dock="Top" 
-            Margin="5">
+            DockPanel.Dock="Top" >
             <Button Content="지우기" Command="{Binding ClearCommand}" Margin="5"/>
             <Label Content="선 색상:" VerticalAlignment="Center"/>
             <ComboBox ItemsSource="{Binding AvailableColors}"
                       SelectedItem="{Binding SelectedColor}" Width="100" Margin="5"/>
             <Label Content="굵기:" VerticalAlignment="Center"/>
-            <Slider Minimum="1" Maximum="20" Value="{Binding LineThickness}" Width="100" Margin="5"/>
+            <Slider Minimum="1" VerticalAlignment="Center" Maximum="20" Value="{Binding LineThickness}" Width="100" Margin="5"/>
         </StackPanel>
         <!-- 캔버스 영역 -->
         <Canvas
