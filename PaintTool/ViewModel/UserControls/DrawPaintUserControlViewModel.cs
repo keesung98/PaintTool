@@ -36,7 +36,12 @@ namespace PaintTool.ViewModel.UserControl
 
         public DrawPaintUserControlViewModel()
         {
-            ClearCommand = new RelayCommandUtil(_ => Lines.Clear());
+            ClearCommand = new RelayCommandUtil(ClearExecute);
+        }
+
+        private void ClearExecute(object? obj)
+        {
+            Lines.Clear();
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
