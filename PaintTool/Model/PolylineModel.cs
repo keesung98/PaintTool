@@ -10,7 +10,7 @@ using System.Windows.Media;
 
 namespace PaintTool.Model
 {
-    internal class PolylineViewModel :INotifyPropertyChanged
+    internal class PolylineModel :INotifyPropertyChanged
     {
         private PointCollection points = new PointCollection();
         public PointCollection Points

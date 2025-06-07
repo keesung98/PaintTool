@@ -20,7 +20,7 @@ namespace PaintTool.Views.UserControls
     public partial class DrawPaintUserControl: UserControl
     {
         private bool isDrawing = false;
-        private PolylineViewModel? currentLine;
+        private PolylineModel? currentLine;
 
         public DrawPaintUserControl()
         {
@@ -32,7 +32,7 @@ namespace PaintTool.Views.UserControls
         private void Canvas_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             isDrawing = true;
-            currentLine = new PolylineViewModel
+            currentLine = new PolylineModel
             {
                 Color = (Brush)new BrushConverter().ConvertFromString(VM.SelectedColor),
                 Thickness = VM.LineThickness

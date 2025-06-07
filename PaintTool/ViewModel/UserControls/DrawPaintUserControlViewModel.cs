@@ -14,7 +14,7 @@ namespace PaintTool.ViewModel.UserControl
 {
     internal class DrawPaintUserControlViewModel
     {
-        public ObservableCollection<PolylineViewModel> Lines { get; set; } = new ObservableCollection<PolylineViewModel>();
+        public ObservableCollection<PolylineModel> Lines { get; set; } = new ObservableCollection<PolylineModel>();
 
         public ObservableCollection<string> AvailableColors { get; } = new ObservableCollection<string> { "Black", "Red", "Blue", "Green" };
 
